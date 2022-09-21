@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid RequestedTheme="Default" AutomationProperties.HelpText="">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="1000"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1"  Width="111" Height="45" Content="Кнопка" HorizontalAlignment="Center" FontSize="20" ToolTipService.ToolTip="Всплывающая подсказка для кнопки" Background="#3300965C" Command="{Binding ButtonClickHandler, ElementName=button1}" BorderBrush="#FF064E61" Click="ClickHandler" Grid.Row="2"/>
+        <TextBlock x:Name="TextNode" HorizontalAlignment="Center" Margin="0,406,0,0" Grid.RowSpan="3" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged"/>
+    </Grid>
+</Page>
