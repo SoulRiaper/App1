@@ -34,7 +34,7 @@ namespace App1
         {
             MediaElement mediaElement = new MediaElement();
             var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
-            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Пашел нахуй черт");
+            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Я ВООБЩЕТО РАЗГОВАРИВАТЬ УМЕЮ");
             mediaElement.SetSource(stream, stream.ContentType);
             binding.GetValue(Text);
             mediaElement.Play();
